@@ -19,21 +19,20 @@ $navbar_type       = get_theme_mod( 'understrap_navbar_type', 'collapse' );
 	<meta charset="<?php bloginfo( 'charset' ); ?>">
 	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 	<link rel="profile" href="http://gmpg.org/xfn/11">
-	<link rel="stylesheet" href="<?php bloginfo('stylesheet_url'); ?>">
-	<title>AMTAXAND</title>
+	<script
+  src="https://code.jquery.com/jquery-3.6.3.js"
+  integrity="sha256-nQLuAZGRRcILA+6dMBOvcRh5Pe310sBpanc6+QBmyVM="
+  crossorigin="anonymous"></script>
+  <script type="text/javascript" src="./wp-content/themes/pulsetester/cssmod.js" ></script>
 	<?php wp_head(); ?>
 </head>
 
- <body <?php body_class(); ?> <?php understrap_body_attributes(); ?>> 
-<?php do_action( 'wp_body_open' ); ?>
+ <body> 
+
 <div class="site" id="page">
 
 	<!-- ******************* The Navbar Area ******************* -->
 	<header id="wrapper-navbar">
-
-		<a class="skip-link" href="#content"><?php esc_html_e( 'Skip to content', 'understrap' ); ?></a>
-
-		<!-- <?php get_template_part( 'global-templates/navbar', $navbar_type . '-' . $bootstrap_version ); ?>  -->
 
 		<div id="my-nav-bar">
         <img id="large-color-logo" alt="large company logo" src="http://pulsetester.local/wp-content/uploads/2022/12/AMTaxandlogo.png" />

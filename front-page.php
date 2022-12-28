@@ -21,28 +21,7 @@ $container = get_theme_mod( 'understrap_container_type' );
 
 <div class="wrapper" id="page-wrapper">
 
-	<div class="<?php echo esc_attr( $container ); ?>" id="content" tabindex="-1">
-
-		<div class="row">
-
-			<!-- <?php
-			// Do the left sidebar check and open div#primary.
-			get_template_part( 'global-templates/left-sidebar-check' );
-			?> -->
-
-			<main class="site-main" id="main">
-
-				<!-- <?php
-				while ( have_posts() ) {
-					the_post();
-					get_template_part( 'loop-templates/content', 'page' );
-
-					// If comments are open or we have at least one comment, load up the comment template.
-					if ( comments_open() || get_comments_number() ) {
-						comments_template();
-					}
-				}
-				?> -->
+			<main class='site-main' id='main'>
 
 				<div id="hero">
 					<video id="background-video" autoplay loop muted ><source alt="background video of the U.S. Capitol and clouds" src="http://pulsetester.local/wp-content/uploads/2022/12/amtax.mp4" type="video/mp4">
@@ -58,26 +37,36 @@ $container = get_theme_mod( 'understrap_container_type' );
                 $about_post = get_post($about_post_id);
                 $title = $about_post->post_title;
                 $content = $about_post->post_content; ?>
-                <h1 class='text-center'><?php echo $title; ?></h1>
-                <p><?php echo $content; ?></p>
+
+				<div>   
+           			<div id="about">
+						<h1 class='text-center'><?php echo $title; ?></h1>
+						<p><?php echo $content; ?></p>
+            		</div>
+       			 </div>
+               
+
+				<hr width="100%" size="20" color="#4e8abe" />
 
                 <?php $what_post_id = 10;
                 $what_post = get_post($what_post_id);
-                $title = $what_post->post_title;
-                $content = $what_post->post_content; ?>
-                <h1><?php echo $title; ?></h1>
-                <p><?php echo $content; ?></p>
+                $title_what = $what_post->post_title;
+                $content_what = $what_post->post_content; ?>
+
+				<div id="what-we-do-container">
+					<!-- <img id="what-we-do-background" alt="background image of tall modern buildings" src="http://pulsetester.local/wp-content/uploads/2022/12/ThinkstockPhotos-468759872-1.png" /> -->
+					<div id="bar-behind">
+						<div id="what-we-do">
+							<h1><?php echo $title_what; ?></h1>
+							<p><?php echo $content_what; ?></p>  
+						</div> 
+						
+					</div>
+           			<img id="do-graphic" alt="large pie chart showing what Alvarez & Marsal does" src="http://pulsetester.local/wp-content/uploads/2022/12/WheelGraphic.png" />
+        		</div>
+                
 
 			</main>
-
-			<!-- <?php
-			// Do the right sidebar check and close div#primary.
-			get_template_part( 'global-templates/right-sidebar-check' );
-			?> -->
-
-		</div><!-- .row -->
-
-	</div><!-- #content -->
 
 </div><!-- #page-wrapper -->
 

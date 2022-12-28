@@ -44,6 +44,10 @@ a {
   padding-right: 1em;
 }
 
+li {
+  list-style-type: none;
+}
+
 #my-nav-bar {
   display: flex;
 }
@@ -76,6 +80,10 @@ a {
   bottom: 25%;
   width: 100%;
   justify-content: space-between;
+}
+
+#page-wrapper.wrapper {
+  padding: 0px;
 }
 
 #hero {
@@ -132,4 +140,109 @@ a {
   position: absolute;
   top: 93%;
   left: 48%;
+}
+
+#about {
+  width: 65%;
+  margin: auto;
+  padding: 1em 0em;
+}
+
+#about {
+  font-family: "Helvetica Neue LT Std", sans-serif;
+  font-size: 1.3em;
+}
+
+hr {
+  margin: 0;
+}
+
+#what-we-do-container {
+  background-image: url("http://pulsetester.local/wp-content/uploads/2022/12/ThinkstockPhotos-468759872-1.png");
+  position: relative;
+  z-index: -1;
+  width: 100%;
+}
+
+#bar-behind {
+  /* position: absolute; */
+  position: relative;
+  width: 100%;
+
+  z-index: 0;
+  opacity: 80%;
+  background-color: #cccccc;
+}
+
+#what-we-do {
+  font-family: "Helvetica Neue LT Std", sans-serif;
+  font-size: 1.3em;
+  position: relative;
+  width: 31%;
+  top: 3%;
+  left: 14%;
+  z-index: 1;
+}
+
+#do-graphic {
+  position: absolute;
+  width: 40%;
+  height: auto;
+  left: 45%;
+  z-index: 2;
+}
+
+.site-footer {
+  position: relative;
+  width: 100%;
+  background-color: #00244a;
+  font-family: "Helvetica Neue LT Std", sans-serif;
+  color: white;
+  font-size: 1em;
+}
+
+#wrapper-footer.wrapper {
+  padding: 0px;
+}
+
+#footer-container {
+  display: flex;
+  position: relative;
+  font-size: 1em;
+  padding-top: 30px;
+  padding-bottom: 40px;
+}
+
+#footer-logo {
+  position: relative;
+  max-width: 8%;
+  height: auto;
+  left: 10%;
+  top: 10%;
+}
+
+#footer-address {
+  position: absolute;
+  left: 20%;
+  padding-top: 3%;
+  padding-left: 3%;
+  width: 30%;
+}
+
+#footer-social {
+  position: absolute;
+  right: 10%;
+  padding-top: 3%;
+}
+
+#social-logos {
+  width: 100%;
+  height: auto;
+}
+
+footer p {
+  position: relative;
+  left: 10%;
+  padding-bottom: 20px;
+  width: 80%;
 }

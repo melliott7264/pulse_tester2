@@ -17,27 +17,34 @@ $container = get_theme_mod( 'understrap_container_type' );
 
 <div class="wrapper" id="wrapper-footer">
 
-	<div class="<?php echo esc_attr( $container ); ?>">
-
-		<div class="row">
-
-			<div class="col-md-12">
-
 				<footer class="site-footer" id="colophon">
+
+				<div id="footer-container">
+					<img id="footer-logo" alt="small footer logo" src="http://pulsetester.local/wp-content/uploads/2022/12/Logocopy2.png" />
+					<div id="footer-address">
+					<ul>
+						<li>600 Madison Avenue</li>
+						<li>8th Floor</li>    
+						<li>New York, New York, 10022</li>
+					</ul>
+            	</div>
+					<div id="footer-social">
+						<ul>
+							<li>Follow us on</li>
+							<li><img id="social-logos" alt="small social media logos" src="http://pulsetester.local/wp-content/uploads/2022/12/socialmediacopy.png"/></li>
+						</ul>
+					</div>
+				</div>
+				<p>©Copyright 2017, Alvarez & Marsal Holdings,LLC. All Rights Reserved.</p>
 
 					<div class="site-info">
 
-						<?php understrap_site_info(); ?>
+
+						<!-- <?php understrap_site_info(); ?> -->
 
 					</div><!-- .site-info -->
 
 				</footer><!-- #colophon -->
-
-			</div><!-- col -->
-
-		</div><!-- .row -->
-
-	</div><!-- .container(-fluid) -->
 
 </div><!-- #wrapper-footer -->
 
@@ -45,6 +52,8 @@ $container = get_theme_mod( 'understrap_container_type' );
 </div><!-- #page -->
 
 <?php wp_footer(); ?>
+
+
 
 </body>
 
