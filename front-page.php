@@ -59,10 +59,11 @@ $container = get_theme_mod( 'understrap_container_type' );
 						<div id="what-we-do">
 							<h1><?php echo $title_what; ?></h1>
 							<p><?php echo $content_what; ?></p>  
+							
 						</div> 
-						
-					</div>
-           			<img id="do-graphic" alt="large pie chart showing what Alvarez & Marsal does" src="http://pulsetester.local/wp-content/uploads/2022/12/WheelGraphic.png" />
+						<img id="do-graphic" alt="large pie chart showing what Alvarez & Marsal does" src="http://pulsetester.local/wp-content/uploads/2022/12/WheelGraphic.png" />
+        			</div>
+           			<!-- <img id="do-graphic" alt="large pie chart showing what Alvarez & Marsal does" src="http://pulsetester.local/wp-content/uploads/2022/12/WheelGraphic.png" /> -->
         		</div>
                 
 

@@ -32,7 +32,6 @@ Full developer documentation: https://docs.understrap.com
 
 body {
   /* limiting page width based on What We Do background graphic in Photoshop mockup */
-  max-width: 1400px;
   position: static;
   box-sizing: border-box;
   margin: 0px;
@@ -48,8 +47,16 @@ li {
   list-style-type: none;
 }
 
-#my-nav-bar {
-  display: flex;
+#main-nav {
+ /* background-color: white !important; */
+}
+
+.nav-link {
+  /* color: black !important; */
+}
+
+button.navbar-toggler {
+  /* color: black !important; */
 }
 
 #large-color-logo {
@@ -64,7 +71,7 @@ li {
 #graphic-small-nav-logo {
   position: absolute;
   top: 3%;
-  left: 50%;
+  right: 10%;
   width: 3%;
   height: auto;
 }
@@ -246,3 +253,26 @@ footer p {
   padding-bottom: 20px;
   width: 80%;
 }
+
+@media screen and (max-width: 800px) {
+
+  #what-we-do {
+    font-family: "Helvetica Neue LT Std", sans-serif;
+    font-size: 1.3em;
+    position: relative;
+    width: 72%;
+    top: 3%;
+    left: 14%;
+    z-index: 1;
+  }
+
+  #do-graphic {
+    position: relative;
+    width: 70%;
+    height: auto;
+    left: 14%;
+    bottom: 0;
+    z-index: 2;
+  }
+}
+  

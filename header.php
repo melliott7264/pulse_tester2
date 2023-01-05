@@ -27,32 +27,17 @@ $navbar_type       = get_theme_mod( 'understrap_navbar_type', 'collapse' );
 	<?php wp_head(); ?>
 </head>
 
- <body> 
-
+<body <?php body_class(); ?> <?php understrap_body_attributes(); ?>> 
+<?php do_action( 'wp_body_open' ); ?>
 <div class="site" id="page">
 
 	<!-- ******************* The Navbar Area ******************* -->
 	<header id="wrapper-navbar">
 
-		<div id="my-nav-bar">
-        <img id="large-color-logo" alt="large company logo" src="http://pulsetester.local/wp-content/uploads/2022/12/AMTaxandlogo.png" />
-		<div id='nav-list-container'>
+  <a class="skip-link" href="#content"><?php esc_html_e( 'Skip to content', 'understrap' ); ?></a>
 
-			<?php
-            $defaults = array(
-              'theme_location' => 'top', 
-              'container' => '', 
-			  'conatainer_id' => 'nav-list-container',
-              'menu_class' => 'nav nav-list',
-              'menu' => 'Menu 1'
-            );
-            wp_nav_menu($defaults); ?> 
+  <?php get_template_part( 'global-templates/navbar', $navbar_type . '-' . $bootstrap_version ); ?>
 
-		</div>
-        <img id="graphic-small-nav-logo" alt="small company logo" src="http://pulsetester.local/wp-content/uploads/2022/12/GlobalLinkage.png" /> 
-        </div>  
-    </div>
-
-	
+  <img id="graphic-small-nav-logo" alt="small company logo" src="http://pulsetester.local/wp-content/uploads/2022/12/GlobalLinkage.png" /> 	
 
 	</header><!-- #wrapper-navbar -->
