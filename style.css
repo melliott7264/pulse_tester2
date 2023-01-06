@@ -48,7 +48,7 @@ li {
 }
 
 #main-nav {
- /* background-color: white !important; */
+  /* background-color: white !important; */
 }
 
 .nav-link {
@@ -196,6 +196,7 @@ hr {
   width: 40%;
   height: auto;
   left: 45%;
+  bottom: 23%;
   z-index: 2;
 }
 
@@ -255,6 +256,9 @@ footer p {
 }
 
 @media screen and (max-width: 800px) {
+  #graphic-small-nav-logo {
+    display: none;
+  }
 
   #what-we-do {
     font-family: "Helvetica Neue LT Std", sans-serif;
@@ -275,4 +279,3 @@ footer p {
     z-index: 2;
   }
 }
-  

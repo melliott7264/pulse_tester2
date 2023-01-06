@@ -9,13 +9,15 @@ jQuery(document).ready(function ($) {
     $("#what-we-do-container").css({
       "padding-top": $("#bar-behind").outerHeight() * 0.3 + "px", // to center #bar-behind in #what-we-do-container
     });
+    if ($("#bar-behind").outerWidth() >= 800) {
     $("#do-graphic").css({
       top:
-        ($("#what-we-do-container").outerHeight() -
+        ($("#bar-behind").outerHeight() -
           $("#do-graphic").outerHeight()) /
           2 +
-        "px", // to center #do-graphic in #what-we-do-container
+        "px", // to center #do-graphic in #bar-behind container
     });
+  } 
   } else {
     $("#what-we-do-container").css({
       height:
@@ -27,9 +29,11 @@ jQuery(document).ready(function ($) {
         ($("#do-graphic").outerHeight() - $("#bar-behind").outerHeight()) / 2 +
         "px", // set height to #do-graphic, center #bar-behind in #what-we-do-container
     });
+    if ($("#bar-behind").outerWidth() >= 800) {
     $("#do-graphic").css({
       top: "10px", // to center #do-graphic in #what-we-do-container
     });
+  }
   }
 });
 $(window).resize(function () {
