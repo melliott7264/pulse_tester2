@@ -30,6 +30,24 @@ Do not modify the parent Understrap theme. Instead, download a copy of the Under
 Full developer documentation: https://docs.understrap.com
 */
 
+/* nav-bar text */
+@font-face {
+  font-family: "Helvetica Neue LT Std Nav";
+  src: url("http://pulsetester.local/wp-content/themes/pulsetester/fonts/HelveticaNeueLTStd-MdCn.otf")
+    format("opentype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+/* text in About and What We Do sections as well as footer */
+@font-face {
+  font-family: "Helvetica Neue LT Std";
+  src: url("http://pulsetester.local/wp-content/themes/pulsetester/fonts/HelveticaNeueLTStd/HelveticaNeueLTStd-LtCn.otf")
+    format("opentype");
+  font-weight: normal;
+  font-style: normal;
+}
+
 body {
   /* limiting page width based on What We Do background graphic in Photoshop mockup */
   position: static;
@@ -47,16 +65,10 @@ li {
   list-style-type: none;
 }
 
-#main-nav {
-  /* background-color: white !important; */
-}
-
-.nav-link {
-  /* color: black !important; */
-}
-
-button.navbar-toggler {
-  /* color: black !important; */
+div.container {
+  position: relative;
+  left: 10%;
+  margin: 0;
 }
 
 #large-color-logo {
@@ -87,6 +99,13 @@ button.navbar-toggler {
   bottom: 25%;
   width: 100%;
   justify-content: space-between;
+}
+
+.nav-link {
+  font-family: "Helvetica Neue LT Std Nav";
+  font-size: 1.3em;
+  padding-top: 2em !important;
+  padding-bottom: 0em !important;
 }
 
 #page-wrapper.wrapper {
@@ -166,6 +185,7 @@ hr {
 
 #what-we-do-container {
   background-image: url("http://pulsetester.local/wp-content/uploads/2022/12/ThinkstockPhotos-468759872-1.png");
+  background-size: cover;
   position: relative;
   z-index: -1;
   width: 100%;
@@ -229,18 +249,22 @@ hr {
   top: 10%;
 }
 
+#text-container {
+  padding-top: 1.5%;
+}
+
 #footer-address {
   position: absolute;
-  left: 20%;
-  padding-top: 3%;
-  padding-left: 3%;
-  width: 30%;
+  left: 17%;
+  /* padding-top: 3%;
+  padding-left: 3%; */
+  width: 45%;
 }
 
 #footer-social {
   position: absolute;
   right: 10%;
-  padding-top: 3%;
+  /* padding-top: 3%; */
 }
 
 #social-logos {
@@ -248,21 +272,34 @@ hr {
   height: auto;
 }
 
-footer p {
+#copyright {
   position: relative;
   left: 10%;
   padding-bottom: 20px;
   width: 80%;
+  font-size: 0.9em;
 }
 
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 768px) {
+  .nav-link {
+    font-family: "Helvetica Neue LT Std Nav";
+    font-size: 1em;
+    padding-top: 0.5em !important;
+    padding-bottom: 0.5em !important;
+  }
+
   #graphic-small-nav-logo {
     display: none;
   }
 
+  #about {
+    font-family: "Helvetica Neue LT Std", sans-serif;
+    font-size: 1em;
+  }
+
   #what-we-do {
     font-family: "Helvetica Neue LT Std", sans-serif;
-    font-size: 1.3em;
+    font-size: 1em;
     position: relative;
     width: 72%;
     top: 3%;
@@ -277,5 +314,13 @@ footer p {
     left: 14%;
     bottom: 0;
     z-index: 2;
+  }
+
+  .site-footer {
+    font-size: 0.7em;
+  }
+
+  #copyright {
+    font-size: 0.65em;
   }
 }

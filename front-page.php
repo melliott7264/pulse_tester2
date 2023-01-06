@@ -54,7 +54,7 @@ $container = get_theme_mod( 'understrap_container_type' );
                 $content_what = $what_post->post_content; ?>
 
 				<div id="what-we-do-container">
-					<!-- <img id="what-we-do-background" alt="background image of tall modern buildings" src="http://pulsetester.local/wp-content/uploads/2022/12/ThinkstockPhotos-468759872-1.png" /> -->
+					
 					<div id="bar-behind">
 						<div id="what-we-do">
 							<h1><?php echo $title_what; ?></h1>
@@ -63,7 +63,7 @@ $container = get_theme_mod( 'understrap_container_type' );
 						</div> 
 						<img id="do-graphic" alt="large pie chart showing what Alvarez & Marsal does" src="http://pulsetester.local/wp-content/uploads/2022/12/WheelGraphic.png" />
         			</div>
-           			<!-- <img id="do-graphic" alt="large pie chart showing what Alvarez & Marsal does" src="http://pulsetester.local/wp-content/uploads/2022/12/WheelGraphic.png" /> -->
+           			
         		</div>
                 
 
