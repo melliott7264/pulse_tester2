@@ -1,6 +1,6 @@
 // script to set height of #what-we-do-container to 160% of .outerHeight() of #bar-behind
 // must also center #do-graphic on #what-we-do-container
-jQuery(document).ready(function ($) {
+$(window).on('load', function() {
   // if #do-graphic is less than or equal to the calculated height of the #what-we-do-container
   if ($("#bar-behind").outerHeight() * 1.6 >= $("#do-graphic").outerHeight()) {
     $("#what-we-do-container").css({
@@ -38,6 +38,8 @@ jQuery(document).ready(function ($) {
     }
   }
 });
+
 $(window).resize(function () {
   location.reload();
 });
+

@@ -33,8 +33,7 @@ Full developer documentation: https://docs.understrap.com
 /* nav-bar text */
 @font-face {
   font-family: "Helvetica Neue LT Std Nav";
-  src: url("http://pulsetester.local/wp-content/themes/pulsetester/fonts/HelveticaNeueLTStd-MdCn.otf")
-    format("opentype");
+  src: url("./fonts/HelveticaNeueLTStd-MdCn.otf") format("opentype");
   font-weight: normal;
   font-style: normal;
 }
@@ -42,8 +41,7 @@ Full developer documentation: https://docs.understrap.com
 /* text in About and What We Do sections as well as footer */
 @font-face {
   font-family: "Helvetica Neue LT Std";
-  src: url("http://pulsetester.local/wp-content/themes/pulsetester/fonts/HelveticaNeueLTStd/HelveticaNeueLTStd-LtCn.otf")
-    format("opentype");
+  src: url("./fonts/HelveticaNeueLTStd-LtCn.otf") format("opentype");
   font-weight: normal;
   font-style: normal;
 }
@@ -71,6 +69,11 @@ div.container {
   margin: 0;
 }
 
+div#navbarNavDropdown {
+  position: relative;
+  right: 10%;
+}
+
 #large-color-logo {
   position: relative;
   top: 20%;
@@ -82,7 +85,7 @@ div.container {
 
 #graphic-small-nav-logo {
   position: absolute;
-  top: 3%;
+  top: 0%;
   right: 10%;
   width: 3%;
   height: auto;
@@ -106,6 +109,11 @@ div.container {
   font-size: 1.3em;
   padding-top: 2em !important;
   padding-bottom: 0em !important;
+}
+
+.navbar-toggler {
+  position: relative;
+  right: 10%;
 }
 
 #page-wrapper.wrapper {
@@ -184,7 +192,7 @@ hr {
 }
 
 #what-we-do-container {
-  background-image: url("http://pulsetester.local/wp-content/uploads/2022/12/ThinkstockPhotos-468759872-1.png");
+  background-image: url("../../uploads/2022/12/ThinkstockPhotos-468759872-1.png");
   background-size: cover;
   position: relative;
   z-index: -1;
@@ -278,6 +286,19 @@ hr {
   padding-bottom: 20px;
   width: 80%;
   font-size: 0.9em;
+}
+
+@media screen and (max-width: 1200px) {
+  .nav-link {
+    font-size: 1.1em;
+}
+}
+
+@media screen and (max-width: 992px) {
+  div#navbarNavDropdown {
+    position: relative;
+    right: 0%;
+  }
 }
 
 @media screen and (max-width: 768px) {

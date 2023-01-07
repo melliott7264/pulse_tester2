@@ -23,7 +23,7 @@ $navbar_type       = get_theme_mod( 'understrap_navbar_type', 'collapse' );
   src="https://code.jquery.com/jquery-3.6.3.js"
   integrity="sha256-nQLuAZGRRcILA+6dMBOvcRh5Pe310sBpanc6+QBmyVM="
   crossorigin="anonymous"></script>
-  <script type="text/javascript" src="./wp-content/themes/pulsetester/cssmod.js" ></script>
+  <script type="text/javascript" src="/wp-content/themes/pulsetester/cssmod.js" ></script>
 	<?php wp_head(); ?>
 </head>
 
@@ -38,6 +38,6 @@ $navbar_type       = get_theme_mod( 'understrap_navbar_type', 'collapse' );
 
   <?php get_template_part( 'global-templates/navbar', $navbar_type . '-' . $bootstrap_version ); ?>
 
-  <img id="graphic-small-nav-logo" alt="small company logo" src="http://pulsetester.local/wp-content/uploads/2022/12/GlobalLinkage.png" /> 	
+  <img id="graphic-small-nav-logo" alt="small company logo" src="/wp-content/uploads/2022/12/GlobalLinkage.png" /> 	
 
 	</header><!-- #wrapper-navbar -->

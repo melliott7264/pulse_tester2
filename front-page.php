@@ -24,13 +24,13 @@ $container = get_theme_mod( 'understrap_container_type' );
 			<main class='site-main' id='main'>
 
 				<div id="hero">
-					<video id="background-video" autoplay loop muted ><source alt="background video of the U.S. Capitol and clouds" src="http://pulsetester.local/wp-content/uploads/2022/12/amtax.mp4" type="video/mp4">
+					<video id="background-video" autoplay loop muted ><source alt="background video of the U.S. Capitol and clouds" src="./wp-content/uploads/2022/12/amtax.mp4" type="video/mp4">
 					</video>
-					<img id="global-logo" alt="2018 Global Conference logo" src="http://pulsetester.local/wp-content/uploads/2022/12/Globallogo.png" />  
-					<img id="conference-date-text" alt="Conference dates May 16-18 2018" src="http://pulsetester.local/wp-content/uploads/2022/12/16-18-MAY-2018.png" />
-					<img id="tax-trends" alt="tax trends today" src="http://pulsetester.local/wp-content/uploads/2022/12/TaxTrends.png" />
-					<img id="scroll-down-text" alt="Scroll Down for More" src="http://pulsetester.local/wp-content/uploads/2022/12/Scroll-down-FOR-MORE.png" />
-					<img id="scroll-down-arrow" alt="down arrow" src="http://pulsetester.local/wp-content/uploads/2022/12/ArrowDown.png" />
+					<img id="global-logo" alt="2018 Global Conference logo" src="/wp-content/uploads/2022/12/Globallogo.png" />  
+					<img id="conference-date-text" alt="Conference dates May 16-18 2018" src="/wp-content/uploads/2022/12/16-18-MAY-2018.png" />
+					<img id="tax-trends" alt="tax trends today" src="/wp-content/uploads/2022/12/TaxTrends.png" />
+					<img id="scroll-down-text" alt="Scroll Down for More" src="/wp-content/uploads/2022/12/Scroll-down-FOR-MORE.png" />
+					<img id="scroll-down-arrow" alt="down arrow" src="/wp-content/uploads/2022/12/ArrowDown.png" />
         		</div>
 
                 <?php $about_post_id = 11;
@@ -61,7 +61,7 @@ $container = get_theme_mod( 'understrap_container_type' );
 							<p><?php echo $content_what; ?></p>  
 							
 						</div> 
-						<img id="do-graphic" alt="large pie chart showing what Alvarez & Marsal does" src="http://pulsetester.local/wp-content/uploads/2022/12/WheelGraphic.png" />
+						<img id="do-graphic" alt="large pie chart showing what Alvarez & Marsal does" src="/wp-content/uploads/2022/12/WheelGraphic.png" />
         			</div>
            			
         		</div>

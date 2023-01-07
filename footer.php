@@ -20,7 +20,7 @@ $container = get_theme_mod( 'understrap_container_type' );
 				<footer class="site-footer" id="colophon">
 
 				<div id="footer-container">
-					<img id="footer-logo" alt="small footer logo" src="http://pulsetester.local/wp-content/uploads/2022/12/Logocopy2.png" />
+					<img id="footer-logo" alt="small footer logo" src="/wp-content/uploads/2022/12/Logocopy2.png" />
 					<div id="text-container">
 						<div id="footer-address">
 							<ul>
@@ -32,7 +32,7 @@ $container = get_theme_mod( 'understrap_container_type' );
 						<div id="footer-social">
 							<ul>
 								<li>Follow us on</li>
-								<li><img id="social-logos" alt="small social media logos" src="http://pulsetester.local/wp-content/uploads/2022/12/socialmediacopy.png"/></li>
+								<li><img id="social-logos" alt="small social media logos" src="/wp-content/uploads/2022/12/socialmediacopy.png"/></li>
 							</ul>
 						</div>
 					</div>	
