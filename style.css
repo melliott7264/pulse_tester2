@@ -72,6 +72,7 @@ div.container {
 div#navbarNavDropdown {
   position: relative;
   right: 10%;
+
 }
 
 #large-color-logo {
@@ -109,6 +110,10 @@ div#navbarNavDropdown {
   font-size: 1.3em;
   padding-top: 2em !important;
   padding-bottom: 0em !important;
+}
+
+.navbar-light .navbar-nav .nav-link {
+  color: #5d8dc1 !important;
 }
 
 .navbar-toggler {
@@ -291,7 +296,7 @@ hr {
 @media screen and (max-width: 1200px) {
   .nav-link {
     font-size: 1.1em;
-}
+  }
 }
 
 @media screen and (max-width: 992px) {
