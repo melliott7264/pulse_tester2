@@ -72,7 +72,6 @@ div.container {
 div#navbarNavDropdown {
   position: relative;
   right: 10%;
-
 }
 
 #large-color-logo {
@@ -112,8 +111,23 @@ div#navbarNavDropdown {
   padding-bottom: 0em !important;
 }
 
-.navbar-light .navbar-nav .nav-link {
+.navbar-light .custom-navbar-nav .nav-link {
   color: #5d8dc1 !important;
+}
+
+.custom-navbar-nav {
+  display: -ms-flexbox;
+  display: flex;
+  position: relative;
+  left: 7%;
+  margin: 0 auto;
+  padding-left: 0;
+  margin-bottom: 0;
+  list-style: none;
+}
+
+.custom-ml-auto {
+  margin-left: auto !important;
 }
 
 .navbar-toggler {
@@ -269,15 +283,12 @@ hr {
 #footer-address {
   position: absolute;
   left: 17%;
-  /* padding-top: 3%;
-  padding-left: 3%; */
   width: 45%;
 }
 
 #footer-social {
   position: absolute;
   right: 10%;
-  /* padding-top: 3%; */
 }
 
 #social-logos {
@@ -299,7 +310,17 @@ hr {
   }
 }
 
-@media screen and (max-width: 992px) {
+@media screen and (max-width: 1000px) {
+  .nav-link {
+    font-size: 1em;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .nav-link {
+    font-size: 0.9em;
+  }
+
   div#navbarNavDropdown {
     position: relative;
     right: 0%;
@@ -307,6 +328,10 @@ hr {
 }
 
 @media screen and (max-width: 768px) {
+  .custom-navbar-nav {
+    flex-direction: column;
+    -ms-flex-direction: column;
+  }
   .nav-link {
     font-family: "Helvetica Neue LT Std Nav";
     font-size: 1em;
