@@ -2,7 +2,7 @@
 
 ## Description
 
-This is an assessment test for Pulse-Creative. A photoshop mockup of a landing page was provided to reproduce in a live WordPress site. The site was created locally using Local by Flywheel and then deployed to a minimal AWS Lightsail server under https://demo.markelliottva.com. The landing page was implemented using a child theme of the Understap theme with a fully custom front-page including JavaScript to create the What We Do section.
+This is an assessment test for Pulse-Creative. A Photoshop mockup of a landing page was provided to reproduce in a live WordPress site. The site was created locally using Local by Flywheel and then deployed to a minimal AWS Lightsail server under https://demo.markelliottva.com. The landing page was implemented using a child theme of the Understap theme with a fully custom front-page including JavaScript to create the What We Do section.
 
 ## Table of Contents (Optional)
 
